@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO (the title & description are also refreshed from content.js) -->
+  <title>Rituraj Singh — Content Creator, Creative Designer, Educator &amp; Entrepreneur</title>
+  <meta name="description" content="Official portfolio of Rituraj Singh — content creator, creative designer, educator and entrepreneur. Explore creative projects, graphic design, branding, digital content and education.">
+  <meta name="author" content="Rituraj Singh">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0a0f1c">
+
+  <!-- Social sharing preview (WhatsApp, Facebook, LinkedIn).
+       OPTIONAL one-time edit AFTER publishing: replace YOUR-USERNAME below with your GitHub username. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rituraj Singh">
+  <meta property="og:title" content="Rituraj Singh — Content Creator, Creative Designer, Educator &amp; Entrepreneur">
+  <meta property="og:description" content="Creative projects, graphic design, branding, digital content and education by Rituraj Singh.">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/assets/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rituraj Singh — Content Creator, Creative Designer, Educator &amp; Entrepreneur">
+  <meta name="twitter:description" content="Creative projects, graphic design, branding, digital content and education by Rituraj Singh.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Free Google Fonts (no account needed). If offline, the site falls back to system fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.documentElement.classList.add('js');
+    try { var th = localStorage.getItem('theme'); if (th === 'light' || th === 'dark') document.documentElement.setAttribute('data-theme', th); } catch (e) {}
+  </script>
+
+  <script type="application/ld+json" id="jsonld">{"@context":"https://schema.org","@type":"Person","name":"Rituraj Singh","jobTitle":"Content Creator, Creative Designer, Educator and Entrepreneur"}</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#home" aria-label="Rituraj Singh — back to top"><b id="logoMark">RS</b><span id="logoName">Rituraj Singh</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch light / dark theme"></button>
+        <button class="icon-btn nav__burger" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <noscript><p style="padding:120px 24px;text-align:center">Please enable JavaScript to view this website.</p></noscript>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb orb--1"></span><span class="orb orb--2"></span><span class="orb orb--3"></span>
+        <span class="grid-bg"></span>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow hero__badge" id="heroBadge"></p>
+          <h1 class="hero__name" id="heroName">RITURAJ<br><span class="grad-text">SINGH</span></h1>
+          <p class="hero__roles"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+          <p class="hero__tagline" id="heroTagline"></p>
+          <p class="hero__intro" id="heroIntro"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" id="btnJourney" href="#journey">Explore My Journey</a>
+            <a class="btn btn--ghost" id="btnWork" href="#projects">View My Work</a>
+            <a class="btn btn--line" id="btnContact" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <span class="ring" aria-hidden="true"></span>
+          <div class="photo-arch" id="heroPhotoWrap"></div>
+          <div class="chips" id="heroChips"></div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+    </section>
+
+    <!-- ============ 2–9. CONTENT SECTIONS (filled from content.js) ============ -->
+    <section class="section" id="about"><div class="container"></div></section>
+    <section class="section section--alt" id="journey"><div class="container"></div></section>
+    <section class="section" id="skills"><div class="container"></div></section>
+    <section class="section section--alt" id="projects"><div class="container"></div></section>
+    <section class="section" id="gallery"><div class="container"></div></section>
+    <section class="section section--alt" id="achievements"><div class="container"></div></section>
+    <section class="section" id="interests"><div class="container"></div></section>
+    <section class="section section--alt" id="contact"><div class="container"></div></section>
+  </main>
+
+  <!-- ============ 10. FOOTER ============ -->
+  <footer class="footer" id="footer"><div class="container"></div></footer>
+
+  <!-- Lightbox -->
+  <div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <button class="lb__btn lb__close" type="button" id="lbClose" aria-label="Close"></button>
+    <button class="lb__btn lb__prev" type="button" id="lbPrev" aria-label="Previous photo"></button>
+    <figure class="lb__fig">
+      <img id="lbImg" alt="">
+      <figcaption><span id="lbCap"></span><small id="lbCount"></small></figcaption>
+    </figure>
+    <button class="lb__btn lb__next" type="button" id="lbNext" aria-label="Next photo"></button>
+  </div>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top"></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
